@@ -4,7 +4,7 @@ Welcome to the repository of my personal portfolio website! This project is desi
 
 It serves as a digital resume and project showcase for my journey as a **Php Developer** specializing in Web Development.
 
-🔗 **[View Live Portfolio Here](https://hardik-portfolio-three-virid.vercel.app)**
+🔗 **[View Live Portfolio Here](https://jaspreet55.github.io/jaspreet-portfolio/)**
 
 ## ✨ Key Features & Highlights
 
