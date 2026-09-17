@@ -37,13 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Condition 1: Agar black card par hai -> text white (.nav-over-dark)
         if (isOverDark) {
-            navbar.classList.add('nav-over-dark');
-            navbar.classList.remove('scrolled');
+            // navbar.classList.add('nav-over-dark');
+            // navbar.classList.remove('scrolled');
         } 
         // Condition 2: Agar hero section (Red) se niche white bg par hai -> text black (.scrolled)
         else if (window.scrollY > window.innerHeight - 80) { 
             navbar.classList.add('scrolled');
-            navbar.classList.remove('nav-over-dark');
+            // navbar.classList.remove('nav-over-dark');
         } 
         // Condition 3: Agar hero section (Red) par hai -> text white (default)
         else {
@@ -204,8 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (isOverDark) {
-            dynamicNavbar.classList.add('nav-over-dark');
-            dynamicNavbar.classList.remove('scrolled');
+            // dynamicNavbar.classList.add('nav-over-dark');
+            // dynamicNavbar.classList.remove('scrolled');
         } else if (window.scrollY > window.innerHeight - 80) { 
             dynamicNavbar.classList.add('scrolled');
             dynamicNavbar.classList.remove('nav-over-dark');
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     );
-
+    document.getElementById('year').textContent = new Date().getFullYear();
     // Contact Form Real Transmission (FORMSPREE)
     const newForm = document.getElementById('transmission-form');
     if(newForm) {
@@ -321,4 +321,33 @@ document.addEventListener("DOMContentLoaded", () => {
             heroImage.style.opacity = '1';
         });
     }
-    
+     document.addEventListener('contextmenu', e => e.preventDefault());
+
+    document.addEventListener('keydown', e => {
+      const key = e.key ? e.key.toUpperCase() : '';
+      const blocked =
+        key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(key)) ||
+        (e.metaKey && e.altKey && ['I', 'J', 'C'].includes(key)) || // Safari/macOS
+        (e.ctrlKey && key === 'U') ||
+        (e.metaKey && e.altKey && key === 'U') ||
+        (e.ctrlKey && key === 'S') ||
+        (e.metaKey && key === 'S');
+      if (blocked) e.preventDefault();
+    });
+
+    (function watchForDevTools() {
+      const overlay = document.createElement('div');
+      overlay.id = 'devtoolsWarning';
+      overlay.style.cssText = 'display:none;position:fixed;inset:0;z-index:9999;background:#07101f;color:#f3f7ff;display:flex;align-items:center;justify-content:center;text-align:center;font:600 1.1rem Inter,sans-serif;padding:40px;';
+      overlay.innerHTML = 'This content is protected.<br>Please close Developer Tools to continue viewing this page.';
+      overlay.style.display = 'none';
+      document.body.appendChild(overlay);
+
+      const threshold = 160;
+      setInterval(() => {
+        const widthGap = window.outerWidth - window.innerWidth > threshold;
+        const heightGap = window.outerHeight - window.innerHeight > threshold;
+        overlay.style.display = (widthGap || heightGap) ? 'flex' : 'none';
+      }, 600);
+    })();

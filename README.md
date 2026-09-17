@@ -1,8 +1,8 @@
-# 🚀 Premium Tech Developer Portfolio
+# 🚀 Premium php Developer Portfolio
 
 Welcome to the repository of my personal portfolio website! This project is designed to stand out, ditching the standard generic templates for a **highly interactive, cinematic, and premium user experience**. 
 
-It serves as a digital resume and project showcase for my journey as a **Tech Developer** specializing in Web Development, Machine Learning, Data Science, and Performance Marketing.
+It serves as a digital resume and project showcase for my journey as a **Php Developer** specializing in Web Development.
 
 🔗 **[View Live Portfolio Here](https://hardik-portfolio-three-virid.vercel.app)**
 
@@ -35,7 +35,7 @@ This project was built from scratch without any heavy frontend frameworks to ens
 If you want to explore the code or run this on your local machine, follow these steps:
 
 1. Clone the repository using your terminal:
-   git clone https://github.com/HardikKhandal01/hardik-portfolio.git
+   git clone https://github.com/jaspreet55/jaspreet-portfolio.git
 
 2. Open the folder in your favorite code editor (e.g., VS Code).
 3. Launch a Local Server:
@@ -47,8 +47,8 @@ If you want to explore the code or run this on your local machine, follow these 
 
 Feel free to reach out if you have any questions about the code, animations, or my projects!
 
-* **Email:** khandalhardik01@gmail.com
+* **Email:** singh55jaspreet@gmail.com
 * **LinkedIn:** [Insert Your LinkedIn Link Here]
 
 ---
-*Designed & Engineered with ❤️ by Hardik Sharma.*
+*Designed & Engineered with ❤️ by Jaspreet Singh.*
