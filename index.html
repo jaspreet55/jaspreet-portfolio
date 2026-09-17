@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Sharma | Hybrid Tech Professional</title>
+    
+    <!-- Lightweight Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="loading">
+
+   <!-- ==================== PREMIUM LOADING SCREEN ==================== -->
+<div id="loader-overlay" class="loader-overlay">
+    <!-- data-text attribute mein same name likhna zaroori hai animation ke liye -->
+    <h1 class="loader-text">Hardik Sharma</h1>
+</div>
+<!-- 🔥 BULLETPROOF JS SCRIPT (With Scroll Fix & Top Load) 🔥 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const loader = document.getElementById("loader-overlay");
+        // 1. Page load hote hi hamesha ekdum Top par bhej dega (Footer pe nahi atakega)
+        window.scrollTo(0, 0);
+        // 2. Loading ke time scroll completely lock kar dega
+        document.body.style.overflow = "hidden";
+        if (loader) {
+            // Wait for exactly 3.5 seconds
+            setTimeout(() => {
+                loader.classList.add("hidden"); 
+                // 🔥 ASLI FIX: Animation khatam hote hi scroll wapas ON kar dega 🔥
+                document.body.style.overflow = "auto"; 
+                setTimeout(() => {
+                    loader.style.display = "none";
+                }, 500); 
+            }, 2500); 
+        }
+    });
+</script>
+
+<!-- 🔥 DESKTOP FIXED SOCIAL SIDEBAR (Hidden on Mobile) 🔥 -->
+    <div class="fixed-social-sidebar gs-reveal">
+        <!-- Apne actual links '#' ki jagah daal dena -->
+        <a href="https://github.com/HardikKhandal01" target="_blank" class="social-icon"><i class="ph-bold ph-github-logo"></i></a>
+        <a href="https://www.linkedin.com/in/hardik-sharma-2852b2215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon"><i class="ph-fill ph-linkedin-logo"></i></a>
+        <a href="https://www.instagram.com/i_hardik01?igsh=ZjNteHV3NTZxMHpr" target="_blank" class="social-icon"><i class="ph ph-instagram-logo"></i></a>
+    </div>
+
+    <!-- ==================== Main Content ==================== -->
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <!-- Navbar -->
+            <header class="navbar" id="navbar">
+                <div class="logo">Hardik Sharma</div>
+                
+                <nav class="nav-links" id="nav-links">
+                    <div class="mobile-menu-header">
+                        <div class="logo mobile-logo">Hardik Sharma</div>
+                        <i class="ph ph-x close-menu" id="close-menu"></i>
+                    </div>
+                    <a href="#home" class="nav-item">Home</a>
+                    <a href="#about" class="nav-item">About</a>
+                    <a href="#skills" class="nav-item">Skills</a>
+                    <a href="#projects" class="nav-item">Projects</a>
+                    <a href="#contact" class="nav-item">Contact</a>
+                    
+                    <!-- Mobile Hire Me Button -->
+                    <a href="mailto:khandalhardik01@gmail.com" class="mobile-hire-btn">Hire Me</a>
+                </nav>
+
+                <!-- Desktop Hire Me Button -->
+                <a href="mailto:khandalhardik01@gmail.com" class="desktop-hire-btn">Hire Me</a>
+
+                <!-- Hamburger Icon for Mobile -->
+                <div class="hamburger" id="hamburger">
+                    <i class="ph ph-list"></i>
+                </div>
+            </header>
+
+            <!-- Chapter 1: The Origin (Hero) -->
+            <section class="hero cinematic-section" id="home">
+                
+                <!-- Hero Background Image & Video -->
+                <img src="assets/images/hardik-profile.png" alt="Hardik Sharma" class="hero-bg-img gs-reveal" id="hero-image">
+                
+                <!-- Video Element (Hidden initially) -->
+                <video id="hero-video" class="hero-bg-video" playsinline preload="metadata">
+                    <source src="assets/video/hardik-intro.mp4" type="video/mp4">
+                </video>
+                
+                <div class="container hero-content">
+                    <h1 class="hero-title gs-reveal">
+                        Hi, I'm Hardik,<br>
+                        <span class="transparent-text">Tech Developer</span>
+                    </h1>
+                    <p class="hero-subtitle gs-reveal">
+                        I build fast, scalable applications using Python, Machine Learning, and optimize growth with Google Ads.
+                    </p>
+                    <div class="hero-buttons gs-reveal">
+                        <a href="#projects" class="btn-primary">View My Work</a>
+                        <a href="#contact" class="btn-secondary">Contact Me</a>
+                        
+                        <!-- 🔥 EDIT 1: DOWNLOAD RESUME WORKING 🔥 -->
+                        <a href="assets/docs/Hardik_Sharma_CV.pdf" download="Hardik_Sharma_CV.pdf" target="_blank" class="btn-outline resume-btn"><i class="ph ph-download-simple"></i> Download Resume</a>
+                        
+                        <!-- 🔥 EDIT 2: MOBILE VIDEO BUTTON (Only visible on phone) 🔥 -->
+                        <button class="video-toggle-btn mobile-video-btn">
+                            <span class="video-btn-icon"><i class="ph-fill ph-play-circle play-icon"></i></span>
+                            <span class="video-btn-text play-text">PLAY REEL</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 🔥 EDIT 3: DESKTOP VIDEO BUTTON (Only visible on PC, right bottom) 🔥 -->
+                <button class="video-toggle-btn desktop-video-btn gs-reveal">
+                    <span class="video-btn-icon"><i class="ph-fill ph-play-circle play-icon"></i></span>
+                    <span class="video-btn-text play-text">PLAY REEL</span>
+                </button>
+            </section>
+
+            <!-- ==================== Chapter 2: The Persona ID Card ==================== -->
+            <section class="persona-section" id="persona">
+                <div class="container persona-container">
+                    
+                    <!-- Left: Hanging ID Card -->
+                    <div class="hanging-card-wrapper" id="hanging-card">
+                        <!-- Cable and Clips -->
+                        <div class="rope-line"></div>
+                        <div class="clip-silver"></div>
+                        <div class="clip-black"></div>
+                        <!-- Frame -->
+                        <div class="id-card-frame">
+                            <img src="assets/images/hardik-profile.png" alt="Hardik Sharma" class="id-card-img">
+                        </div>
+                    </div>
+
+                    <!-- Right: Hello Description & Skills -->
+                    <div class="persona-content gs-reveal">
+                        <h2 class="persona-heading">Hello!</h2>
+                        <p class="persona-bio">
+                            Hi, my name is <span class="highlight-name">Hardik Sharma</span>, a tech professional based in Sikar, India, My journey begins with pure logic. Pursuing my B.Sc. in Mathematics(Final Year) built the analytical foundation I use today. I operate at the intersection of four powerful domains: Web Development, Machine Learning, Data Science and Performance Marketing.
+                            </p>
+                            <p class="persona-bio2">
+                                Fluent in both English and Hindi, I bridge the gap between complex data/code and human communication.
+                            </p>
+
+                        <!-- Expertise Logos (No boxes, pure icons) -->
+                        <div class="expertise-logos">
+                            <div class="skill-item">
+                                <!-- Phosphor icon for Python/Code -->
+                                <i class="ph ph-file-code"></i> 
+                                <span>PYTHON</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="ph ph-brain"></i>
+                                <span>MACHINE LEARNING</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="ph ph-gear-six"></i>
+                                <span>n8n AUTOMATION</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="ph ph-chart-bar"></i>
+                                <span>POWER BI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fixed Wavy Transition (No Red Lines, Full Width) -->
+                <div class="exp-wave-bottom" style="background-color: #050505; background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px); background-size: 100px 100px;">
+                    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                        <path d="M 0,60 
+                                 C 120,60, 180,20, 360,20 
+                                 C 540,20, 540,100, 720,100 
+                                 C 900,100, 900,20, 1080,20 
+                                 C 1260,20, 1320,60, 1440,60 
+                                 L 1440,0 L 0,0 Z" 
+                              fill="var(--accent)"></path>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- ==================== Chapter 3: The Arsenal (Skills) ==================== -->
+            <section class="skills cinematic-section" id="skills">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="skills-header gs-reveal">
+                        <span class="skills-badge">Technical Stack</span>
+                        <h2 class="skills-main-title">MY SKILLSET</h2>
+                        <p class="skills-desc">A comprehensive overview of my programming languages, frameworks, data tools, and marketing expertise.</p>
+                    </div>
+
+                    <!-- Skills Grid (6 Categories) -->
+                    <div class="skills-grid-new">
+                        
+                        <!-- 1. Programming Languages -->
+                        <div class="glass-card gs-reveal">
+                            <h3 class="skill-category-title">PROGRAMMING LANGUAGES</h3>
+                            
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Python</span><span class="skill-pct">100%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="100%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>JavaScript</span><span class="skill-pct">70%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="70%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>SQL</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Data Intelligence -->
+                        <div class="glass-card gs-reveal">
+                            <h3 class="skill-category-title">DATA INTELLIGENCE</h3>
+                            
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Machine Learning</span><span class="skill-pct">100%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="100%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Data Analytics</span><span class="skill-pct">100%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="100%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Pandas & NumPy</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Web Architecture -->
+                        <div class="glass-card gs-reveal">
+                            <h3 class="skill-category-title">WEB ARCHITECTURE</h3>
+                            
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>HTML & CSS</span><span class="skill-pct">100%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="100%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Next.js</span><span class="skill-pct">80%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>REST APIs</span><span class="skill-pct">85%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="85%"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Performance Marketing -->
+                        <div class="glass-card gs-reveal">
+                            <h3 class="skill-category-title">PERFORMANCE MARKETING</h3>
+                            
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Google Ads</span><span class="skill-pct">95%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Conversion Tracking</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>ROI Optimization</span><span class="skill-pct">88%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="88%"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Tools & Automation -->
+                        <div class="glass-card gs-reveal">
+                            <h3 class="skill-category-title">TOOLS & AUTOMATION</h3>
+                            
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>n8n Automation</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Git & GitHub</span><span class="skill-pct">100%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="100%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>AI Integration (LLMs)</span><span class="skill-pct">95%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="95%"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Core Concepts -->
+                        <div class="glass-card gs-reveal">
+                            <h3 class="skill-category-title">CORE CONCEPTS</h3>
+                            
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Mathematical Logic</span><span class="skill-pct">95%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="95%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Predictive Modeling</span><span class="skill-pct">82%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="82%"></div></div>
+                            </div>
+                            <div class="skill-bar-group">
+                                <div class="skill-info"><span>Problem Solving</span><span class="skill-pct">90%</span></div>
+                                <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Chapter 3.5: The Process ==================== -->
+            <section class="process-section cinematic-section" id="process">
+                <div class="container process-layout">
+                    
+                    <!-- Left Side: Sticky Title -->
+                    <div class="process-text-col gs-reveal">
+                        <span class="process-badge">My Process</span>
+                        <h2 class="process-title">Here's how I turn complex data into real-world solutions</h2>
+                        <p class="process-desc">I follow a structured, analytical, and highly technical approach to build robust machine learning models and intelligent automated workflows.</p>
+                    </div>
+
+                    <!-- Right Side: Winding Timeline -->
+                    <div class="process-timeline-col">
+                        
+                        <!-- The Dashed Winding Line (Stays strictly inside boundaries) -->
+                        <svg class="snake-line" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <!-- Background Light Grey Path -->
+                            <path class="path-bg" d="M 85 8 C 85 16, 15 16, 15 25 C 15 33, 85 33, 85 42 C 85 50, 15 50, 15 58 C 15 66, 85 66, 85 75 C 85 83, 15 83, 15 92" />
+                            <!-- Active Black Mask Path -->
+                            <mask id="snakeMask">
+                                <rect id="snake-mask-rect" x="0" y="0" width="100" height="0" fill="white" />
+                            </mask>
+                            <path class="path-fill" mask="url(#snakeMask)" d="M 85 8 C 85 16, 15 16, 15 25 C 15 33, 85 33, 85 42 C 85 50, 15 50, 15 58 C 15 66, 85 66, 85 75 C 85 83, 15 83, 15 92" />
+                        </svg>
+
+                        <!-- Timeline Cards (6 Cards) -->
+                        <!-- Card 1 (Right) -->
+                        <div class="process-card right-card">
+                            <div class="card-button-wrapper"><div class="silver-button"></div></div>
+                            <div class="card-num">01</div>
+                            <h3>Data Ingestion</h3>
+                            <p>Gathering raw logs from complex APIs, SQL databases, and web scraping sources to lay the foundation.</p>
+                        </div>
+                        
+                        <!-- Card 2 (Left) -->
+                        <div class="process-card left-card">
+                            <div class="card-button-wrapper"><div class="silver-button"></div></div>
+                            <div class="card-num">02</div>
+                            <h3>Data Cleaning</h3>
+                            <p>Processing noise, handling missing values, and preparing meticulously structured datasets for deep analysis.</p>
+                        </div>
+
+                        <!-- Card 3 (Right) -->
+                        <div class="process-card right-card">
+                            <div class="card-button-wrapper"><div class="silver-button"></div></div>
+                            <div class="card-num">03</div>
+                            <h3>Feature Engineering</h3>
+                            <p>Extracting highly predictive variables and patterns to train extremely accurate ML models.</p>
+                        </div>
+
+                        <!-- Card 4 (Left) -->
+                        <div class="process-card left-card">
+                            <div class="card-button-wrapper"><div class="silver-button"></div></div>
+                            <div class="card-num">04</div>
+                            <h3>Model Training</h3>
+                            <p>Building predictive models using Python, Scikit-learn, and integrating OpenAI APIs for cognitive reasoning.</p>
+                        </div>
+
+                        <!-- Card 5 (Right) -->
+                        <div class="process-card right-card">
+                            <div class="card-button-wrapper"><div class="silver-button"></div></div>
+                            <div class="card-num">05</div>
+                            <h3>n8n Automation</h3>
+                            <p>Designing seamless intelligent nodes and logical routing in n8n to automate the entire data pipeline.</p>
+                        </div>
+
+                        <!-- Card 6 (Left) -->
+                        <div class="process-card left-card">
+                            <div class="card-button-wrapper"><div class="silver-button"></div></div>
+                            <div class="card-num">06</div>
+                            <h3>Deploy & Optimize</h3>
+                            <p>Deploying workflows to cloud servers, rigorously testing edge cases, and setting up real-time ROI tracking.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== Chapter 4: Featured Projects ==================== -->
+            <section class="featured-projects-section" id="projects">
+                <div class="container">
+                    
+                    <!-- Section Header -->
+                    <div class="projects-header gs-reveal">
+                        <span class="projects-badge">Featured Projects</span>
+                        <h2 class="projects-main-title">Work that speaks for itself</h2>
+                        <p class="projects-desc">A selection of projects that showcase my expertise in full-stack development, machine learning, and intelligent automation.</p>
+                    </div>
+
+                    <div class="projects-list">
+                        
+                        <!-- Project 01: AI Receptionist (Flagship) -->
+                        <div class="premium-project-card">
+                            <div class="flagship-badge">🚀 FLAGSHIP PROJECT</div>
+                            <div class="project-title-wrapper">
+                                <span class="project-num">01</span>
+                                <h3>AI Receptionist Web App</h3>
+                            </div>
+                            <p class="project-about">
+                                An intelligent voice and text-based web application acting as an autonomous virtual receptionist. It seamlessly handles customer inquiries, books appointments, and routes complex calls using advanced Natural Language Processing (NLP). Features include real-time database synchronization, customizable AI agent personas, and a dashboard for businesses to monitor interactions.
+                            </p>
+                            <div class="tech-stack-pills">
+                                <span>Next.js</span><span>Python</span><span>FastAPI</span><span>OpenAI API</span><span>PostgreSQL</span><span>WebSockets</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HardikKhandal01/the-golden-leaf-restaurant" class="btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://hardikkhandal01.github.io/the-golden-leaf-restaurant/" class="btn-demo"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 02: Marketing SaaS (Flagship) -->
+                        <div class="premium-project-card">
+                            <div class="flagship-badge">🚀 FLAGSHIP PROJECT</div>
+                            <div class="project-title-wrapper">
+                                <span class="project-num">02</span>
+                                <h3>Complete Marketing Agency SAAS</h3>
+                            </div>
+                            <p class="project-about">
+                                A multi-tenant, enterprise-grade SaaS platform tailored for marketing agencies to manage clients, track campaigns, and automate reporting. Built with a scalable architecture, it features secure role-based access control (RBAC), automated Stripe billing, and a centralized analytics dashboard drawing data from multiple ad platforms.
+                            </p>
+                            <div class="tech-stack-pills">
+                                <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Stripe API</span><span>Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HardikKhandal01/agency-saas" class="btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://agency-saas-six.vercel.app/" class="btn-demo"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 03: RetainIQ:AI Churn Intelligence (Flagship) -->
+                        <div class="premium-project-card">
+                            <div class="flagship-badge">🚀 FLAGSHIP PROJECT</div>
+                            <div class="project-title-wrapper">
+                                <span class="project-num">03</span>
+                                <h3>RetainIQ:AI Churn Intelligence</h3>
+                            </div>
+                            <p class="project-about">
+                                An enterprise-grade machine learning platform designed to proactively predict and prevent customer churn. It analyzes behavioral metrics to generate real-time risk scores, dynamically segments users, and triggers automated n8n webhook alerts to retention teams. Engineered with a high-performance FastAPI backend and a responsive React dashboard, it empowers businesses to save 'at-risk' revenue through actionable, AI-driven insights and bulk CSV processing.
+                            </p>
+                            <div class="tech-stack-pills">
+                                <span>Python</span><span>FastAPI</span><span>Scikit-learn</span><span>Tailwind CSS</span><span>React + Vite</span><span>n8n Automations</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HardikKhandal01/RetainIQ-AI-Churn-Intelligence" class="btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://retain-iq-ai-churn-intelligence.vercel.app/" class="btn-demo"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 04: Sales Prediction Dashboard -->
+                        <div class="premium-project-card">
+                            <div class="flagship-badge">🚀 FLAGSHIP PROJECT</div>
+                            <div class="project-title-wrapper">
+                                <span class="project-num">04</span>
+                                <h3>ForecastIQ: AI Powered Sales Prediction Dashboard</h3>
+                            </div>
+                            <p class="project-about">
+                                ForecastIQ is not just a static dashboard; it is a dynamic AI data engine built to empower business leaders. I developed a custom Automated Machine Learning (AutoML) pipeline using FastAPI that ingests raw business data, dynamically cleans it, and retrains predictive models on the fly without exceeding server memory limits. The React-based frontend provides an intuitive interface for users to visualize 90-day AI forecasts, track statistical anomalies, and use a 'What-If' simulator to instantly calculate the net impact of strategic decisions like marketing boosts or price discounts.
+                            </p>
+                            <div class="tech-stack-pills">
+                                <span>Python</span><span>Pandas</span><span>NumPy</span><span>FastAPI</span><span>React.js</span><span>Tailwind CSS</span><span>Recharts</span><span>Lucide Icons</span><span>XGBoost</span><span>Scikit-learn</span><span>Joblib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/HardikKhandal01/forecastiq" class="btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                                <a href="https://forecastiq-two.vercel.app/" class="btn-demo"><i class="ph ph-arrow-square-out"></i> Live Demo</a>
+                            </div>
+                        </div>
+
+                        <!-- Project 05: AI Email Brain (Flagship) -->
+                        <div class="premium-project-card">
+                            <div class="flagship-badge">🚀 FLAGSHIP PROJECT</div>
+                            <div class="project-title-wrapper">
+                                <span class="project-num">05</span>
+                                <h3>AI Email Brain</h3>
+                            </div>
+                            <p class="project-about">
+                                An autonomous n8n workflow acting as an intelligent email assistant. It monitors incoming communications, categorizes emails by urgency and intent, drafts context-aware responses using LLMs, and triggers specific CRM actions (like creating tickets or updating lead status) completely hands-free.
+                            </p>
+                            <div class="tech-stack-pills">
+                                <span>n8n</span><span>OpenAI API</span><span>Gmail API</span><span>Webhooks</span><span>Regex</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-github"><i class="ph ph-github-logo"></i> GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Explore All Button -->
+                    <div class="explore-more-wrapper gs-reveal">
+                        <a href="https://github.com/HardikKhandal01" target="_blank" class="btn-explore-all">
+                            <i class="ph ph-github-logo"></i> Explore All My Repositories <i class="ph ph-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ==================== Chapter 4.1: Work Experience ==================== -->
+            <section class="experience-section" id="experience">
+                
+                <!-- 🔥 TOP WAVE (Black Graph Grid Below, Red Wave On Top) 🔥 -->
+                <div class="exp-wave-top" style="background-color: #050505; background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px); background-size: 100px 100px;">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                <!-- Yahan main path ko neeche ki taraf (L 1440,120 L 0,120) close kiya hai -->
+                <!-- Isse wave ka neeche wala hissa Red ho jayega aur upar wali khaali jagah mein grid dikhegi! -->
+                <path d="M 0,60 
+                 C 120,60, 180,20, 360,20 
+                 C 540,20, 540,100, 720,100 
+                 C 900,100, 900,20, 1080,20 
+                 C 1260,20, 1320,60, 1440,60 
+                 L 1440,120 L 0,120 Z" 
+                 fill="var(--accent)"></path>
+                </svg>
+                </div>
+
+                <div class="container relative-z">
+                    <div class="exp-header gs-reveal">
+                        <h2 class="exp-main-title">WORK EXPERIENCE</h2>
+                        <p class="exp-subtitle">Practical implementations & live projects applying Web Tech and Data Science principles.</p>
+                    </div>
+
+                    <div class="exp-grid">
+                        <!-- Box 1: Web Dev & Ads (Imaginary) -->
+                        <div class="exp-card gs-reveal">
+                            <div class="exp-date">AUG 2024 - PRESENT <span class="exp-badge">AGENCY</span></div>
+                            <h3 class="exp-role">Web Developer & Ads Specialist</h3>
+                            <h4 class="exp-company">NEXUS DIGITAL MARKETING</h4>
+                            <p class="exp-skills-title">SKILLS GAINED:</p>
+                            <ul class="exp-skills-list">
+                                <li>Google Ads Campaign Optimization</li>
+                                <li>High-Converting Landing Pages</li>
+                                <li>A/B Testing & Analytics</li>
+                                <li>Client Onboarding Flows</li>
+                            </ul>
+                            <p class="exp-tech-title">TECHNOLOGIES:</p>
+                            <div class="exp-tech-pills">
+                                <span>Google Ads</span><span>WordPress</span><span>HTML/CSS</span><span>GA4</span>
+                            </div>
+                        </div>
+
+                        <!-- Box 2: Live Data Science Project 1 -->
+                        <div class="exp-card gs-reveal">
+                            <div class="exp-date">JAN 2025 - MAR 2025 <span class="exp-badge">LIVE PROJECT</span></div>
+                            <h3 class="exp-role">Predictive Analytics Specialist</h3>
+                            <h4 class="exp-company">FREELANCE CLIENT</h4>
+                            <p class="exp-skills-title">SKILLS GAINED:</p>
+                            <ul class="exp-skills-list">
+                                <li>Advanced Data Preprocessing</li>
+                                <li>Customer Churn Prediction</li>
+                                <li>Feature Engineering</li>
+                                <li>Business Insight Generation</li>
+                            </ul>
+                            <p class="exp-tech-title">TECHNOLOGIES:</p>
+                            <div class="exp-tech-pills">
+                                <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>XGBoost</span>
+                            </div>
+                        </div>
+
+                        <!-- Box 3: Live Data Science Project 2 -->
+                        <div class="exp-card gs-reveal">
+                            <div class="exp-date">MAY 2025 - JUL 2025 <span class="exp-badge">LIVE PROJECT</span></div>
+                            <h3 class="exp-role">NLP & Sentiment Engineer</h3>
+                            <h4 class="exp-company">OPEN SOURCE CONTRIBUTION</h4>
+                            <p class="exp-skills-title">SKILLS GAINED:</p>
+                            <ul class="exp-skills-list">
+                                <li>Natural Language Processing</li>
+                                <li>Sentiment Classification</li>
+                                <li>API Integration & Scraping</li>
+                                <li>Automated Reporting</li>
+                            </ul>
+                            <p class="exp-tech-title">TECHNOLOGIES:</p>
+                            <div class="exp-tech-pills">
+                                <span>Python</span><span>NLTK</span><span>TensorFlow</span><span>FastAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🔥 BOTTOM WAVE: Smooth Mountains & Valley (Fixed) 🔥 -->
+                <div class="exp-wave-bottom" style="background-color: #050505; background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px); background-size: 100px 100px;">
+                    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+                        <path d="M 0,60 
+                                 C 120,60, 180,20, 360,20 
+                                 C 540,20, 540,100, 720,100 
+                                 C 900,100, 900,20, 1080,20 
+                                 C 1260,20, 1320,60, 1440,60 
+                                 L 1440,0 L 0,0 Z" 
+                              fill="var(--accent)"></path>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- ==================== Chapter 4.2: Certifications ==================== -->
+<section class="cert-section" id="certifications">
+    <div class="container">
+        <div class="cert-header gs-reveal">
+            <h2>Certifications</h2>
+            <p>Industry-recognized credentials that validate my technical expertise.</p>
+        </div>
+
+        <div class="cert-grid">
+            <!-- Certification Boxes -->
+            <div class="cert-card gs-reveal">
+                <div class="cert-icon">🏆</div>
+                <h3>Data Science Certification</h3>
+                <p>PW Skills</p>
+            </div>
+            <div class="cert-card gs-reveal">
+                <div class="cert-icon">📈</div>
+                <h3>Google Ads Certification</h3>
+                <p>Udemy</p>
+            </div>
+            <div class="cert-card gs-reveal">
+                <div class="cert-icon">🐍</div>
+                <h3>Python Programming</h3>
+                <p>Advanced Level</p>
+            </div>
+            <div class="cert-card gs-reveal">
+                <div class="cert-icon">📊</div>
+                <h3>Power BI Data Analyst</h3>
+                <p>Professional Certification</p>
+            </div>
+            <div class="cert-card gs-reveal">
+                <div class="cert-icon">🌐</div>
+                <h3>Cloud Infrastructure</h3>
+                <p>Oracle Cloud 2025</p>
+            </div>
+            <div class="cert-card gs-reveal">
+                <div class="cert-icon">🤖</div>
+                <h3>Machine Learning</h3>
+                <p>Deep Learning Specialization</p>
+            </div>
+        </div>
+
+        <div class="cert-footer gs-reveal">
+            <!-- Ye Google Drive link hai jahan user permission request karega -->
+            <a href="YOUR_GOOGLE_DRIVE_LINK" target="_blank" class="view-all-btn">
+                <i class="ph ph-file-pdf"></i> View All Certificates →
+            </a>
+        </div>
+    </div>
+</section>
+
+            <!-- ==================== Chapter 5: Professional Soft Skills ==================== -->
+            <section class="soft-skills-section" id="soft-skills">
+                <div class="container">
+                    <div class="soft-skills-header gs-reveal">
+                        <span class="skills-pill">Core Competencies</span>
+                        <h2>PROFESSIONAL SOFT SKILLS</h2>
+                        <p>Essential traits that make me an effective engineer, coordinator, and communicator.</p>
+                    </div>
+
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">👑</div>
+                            <h3>LEADERSHIP</h3>
+                            <p>Guiding teams, managing tasks, and driving project completion with a shared vision.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">🎤</div>
+                            <h3>PUBLIC SPEAKING</h3>
+                            <p>Confident stage presence, anchoring summits, and delivering articulate technical ideas.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">🤝</div>
+                            <h3>TEAM COLLABORATION</h3>
+                            <p>Collaborating across fields, building seamless architectures and engineering code in sync.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">💬</div>
+                            <h3>COMMUNICATION</h3>
+                            <p>Clear, concise, and structured interactions in both business and technical contexts.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">🧩</div>
+                            <h3>PROBLEM SOLVING</h3>
+                            <p>Breaking down complex engineering and data tasks into clean, logical, and modular pieces.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">⚡</div>
+                            <h3>ADAPTABILITY</h3>
+                            <p>Quick to pick up new frameworks like Next.js, FastAPI, or automation tools like n8n.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">🎨</div>
+                            <h3>CREATIVITY</h3>
+                            <p>Blending cinematic aesthetics with software structure to build premium experiences.</p>
+                        </div>
+                        <div class="soft-skill-card gs-reveal">
+                            <div class="skill-icon">⏱️</div>
+                            <h3>TIME MANAGEMENT</h3>
+                            <p>Balancing continuous learning, freelance projects, and developing robust software platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== CINEMATIC CONTACT REVEAL ==================== -->
+            <div class="contact-reveal-wrapper" id="contact-reveal">
+                <!-- Text container jisko hum GSAP se sunrise/sunset karwayenge -->
+                <div class="giant-text-container">
+                    <h1 class="giant-text">CONTACT</h1>
+                </div>
+            </div>
+
+            <!-- ==================== REACH ME (RED CONTACT FORM) ==================== -->
+            <section class="red-contact-section" id="contact">
+                <div class="container">
+                    <form id="transmission-form" class="contact-grid-form">
+                        
+                        <!-- Header & Insta Btn -->
+                        <div class="form-header-area">
+                            <h3 class="reach-me-title">REACH ME</h3>
+                            <a href="https://www.instagram.com/i_hardik01?igsh=ZjNteHV3NTZxMHpr" target="_blank" class="insta-btn"><i class="ph ph-instagram-logo"></i> DM ON INSTAGRAM</a>
+                        </div>
+
+                        <!-- Left Column Fields -->
+                        <div class="input-wrapper input-fname">
+                            <label>First Name</label>
+                            <input type="text" id="sender-fname" required>
+                        </div>
+                        
+                        <div class="input-wrapper input-lname">
+                            <label>Last Name</label>
+                            <input type="text" id="sender-lname" required>
+                        </div>
+                        
+                        <div class="input-wrapper input-email">
+                            <label>Email</label>
+                            <input type="email" id="sender-email" required>
+                        </div>
+                        
+                        <div class="input-wrapper input-checkbox">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="sender-permission" required>
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">I give permission to contact me at this email address.</span>
+                            </label>
+                        </div>
+
+                        <!-- Right Column Fields -->
+                        <div class="input-wrapper input-message">
+                            <label>Type your message here</label>
+                            <textarea id="sender-message" required></textarea>
+                        </div>
+
+                        <div class="form-footer-texts">
+                            <p>Your message will be sent directly to my inbox. I typically respond within 24-48 hours.</p>
+                            <p class="urgent-text">For urgent inquiries, reach me at <a href="mailto:khandalhardik01@gmail.com">khandalhardik01@gmail.com</a></p>
+                        </div>
+
+                        <div class="form-submit-area">
+                            <button type="submit" class="submit-btn">Send Message <i class="ph ph-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- ==================== Chapter 6: The Footer ==================== -->
+            <footer class="footer-section" id="footer">
+                
+                <!-- Div 1: Top Information Row -->
+                <div class="footer-top gs-reveal">
+                    <!-- Top Left -->
+                    <div class="footer-top-col text-left">
+                        Data Science & Performance Marketing<br>
+                        Python · Machine Learning · n8n<br>
+                        Hybrid Tech Solutions
+                    </div>
+                    <!-- Top Center -->
+                    <div class="footer-top-col text-center">
+                        B.Sc. Mathematics · Data Science · <br>
+                        <a href="#projects" class="footer-link">View Work</a>
+                    </div>
+                    <!-- Top Right -->
+                    <div class="footer-top-col text-right">
+                        Available for opportunities<br>
+                        2026
+                    </div>
+                </div>
+
+                <!-- Div 2: Giant Name Row -->
+                <div class="footer-middle gs-reveal">
+                    <h1 class="footer-name">Hardik Sharma</h1>
+                </div>
+
+                <!-- Div 3: Bottom Links Row -->
+                <div class="footer-bottom gs-reveal">
+                    <!-- Bottom Left -->
+                    <div class="footer-bottom-col text-left">
+                        <a href="#contact" class="footer-link">Contact</a><br><br>
+                        <span class="copyright-text">© 2026 Hardik Sharma | </span>
+                    </div>
+                    <!-- Bottom Center -->
+                    <div class="footer-bottom-col text-center center-content">
+                        <a href="mailto:khandalhardik01@gmail.com" class="footer-link email-text">khandalhardik01@gmail.com</a>
+                        <div class="footer-socials">
+                            <a href="https://github.com/HardikKhandal01" target="_blank"><i class="ph ph-github-logo"></i></a>
+                            <a href="https://www.linkedin.com/in/hardik-sharma-2852b2215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                            <a href="https://www.instagram.com/i_hardik01?igsh=ZjNteHV3NTZxMHpr" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                        </div>
+                    </div>
+                    <!-- Bottom Right -->
+                    <div class="footer-bottom-col text-right">
+                        <a href="https://github.com/HardikKhandal01" target="_blank" class="footer-link">Explore My GitHub</a>
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </main>
+
+    <!-- ==================== Lightweight GSAP via CDN ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
