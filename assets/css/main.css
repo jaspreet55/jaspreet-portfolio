@@ -909,8 +909,8 @@ body.loading {
         height: 100px; /* Shorter rope for mobile */
     }
     .id-card-frame {
-        width: 280px;
-        height: 380px;
+        width: 300px;
+        height: 440px;
     }
     .expertise-logos {
         flex-wrap: wrap !important; /* Allow wrapping on smaller screens */
@@ -1413,7 +1413,7 @@ body.loading {
     .project-about { max-width: 100%; }
     .project-links { flex-direction: column; }
     .btn-github, .btn-demo { justify-content: center; width: 100%; }
-    .project-grid { display: grid; grid-template-columns: repeat(2, 1fr) !important;}
+    .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;}
     .skill-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1633,9 +1633,9 @@ body.loading {
 /* ==================== MOBILE RESPONSIVENESS (FOOTER) ==================== */
 @media (max-width: 992px) {
     .footer-section {
-        height: 10vh; /* Full viewport height */
+        height: 12vh; /* Full viewport height */
         min-height: 10vh;
-        padding: 2rem 1.5rem;
+        padding: 1rem 1.5rem;
         gap: 2rem; /* Rows ke beech gap */
     }
     
@@ -2077,4 +2077,7 @@ html, body {
       .hero-bg-img {
         object-fit: contain;
       }
+  }
+  @media (max-width: 900px) {
+     .experience-grid { grid-template-columns: 1fr; }
   }
