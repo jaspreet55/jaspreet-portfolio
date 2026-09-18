@@ -2052,12 +2052,14 @@ html, body {
         color: #fff;
         border: 1px solid var(--line); 
         border-radius: 50%; 
-        transition: .25s; }
+        transition: .25s;
+    }
     .project:hover .project-arrow { 
-/*        background: var(--primary); */
+        /*        background: var(--primary); */
         background-color: var(--accent);
-    color: #ffffff;
-        transform: rotate(45deg); }
+            color: #ffffff;
+        transform: rotate(45deg); 
+    }
 
 @media (max-width: 580px) {
      
