@@ -2065,7 +2065,23 @@ html, body {
       .contact-box { padding: 30px 24px; display: block; }
       .contact-actions { margin-top: 25px; }
       .footer-content { flex-direction: column; text-align: center; }
-      
+        .hero-title {
+            font-size: 1.5rem;
+        }
+        .hero-bg-img {
+            object-fit: contain;
+            top: -135px;
+        }
+        .hero-content {
+            top: 90px;
+      }
+      .hero-bg-video {
+        object-fit: contain;
+        top: -135px;
+      }
+      .btn-primary, .btn-secondary, .btn-outline {
+        padding: 9px 20px;
+        }
   }
   @media (max-width: 767px) {
     .hero-content {
